@@ -1,0 +1,209 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "CB-.YYYY.-.#####",
+ "creation": "2026-07-10 00:00:33.722717",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "crane_booking_section",
+  "booking_date",
+  "start_time",
+  "end_time",
+  "duration",
+  "status",
+  "lift_type",
+  "customer",
+  "contact",
+  "phone",
+  "boat",
+  "boat_name",
+  "design",
+  "length",
+  "beam",
+  "weight",
+  "draft",
+  "crane_id",
+  "crane",
+  "operator",
+  "assistant",
+  "lift_location",
+  "destination",
+  "price",
+  "notes",
+  "internal_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "crane_booking_section",
+   "fieldtype": "Section Break",
+   "label": "Crane Booking"
+  },
+  {
+   "fieldname": "booking_date",
+   "fieldtype": "Date",
+   "label": "Booking Date"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nConfirmed\nIn Progress\nCompleted\nCancelled\nRescheduled"
+  },
+  {
+   "fieldname": "lift_type",
+   "fieldtype": "Select",
+   "label": "Lift Type",
+   "options": "Lift In\nLift Out\nLift In & Out\nWash Down\nEngine Lift\nMast Step\nSurvey Lift\nOther"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Link",
+   "label": "Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "boat",
+   "fieldtype": "Link",
+   "label": "Boat",
+   "options": "Private Boat"
+  },
+  {
+   "fieldname": "boat_name",
+   "fieldtype": "Read Only",
+   "label": "Boat Name"
+  },
+  {
+   "fieldname": "design",
+   "fieldtype": "Read Only",
+   "label": "Design"
+  },
+  {
+   "fieldname": "length",
+   "fieldtype": "Read Only",
+   "label": "Length"
+  },
+  {
+   "fieldname": "beam",
+   "fieldtype": "Read Only",
+   "label": "Beam"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Read Only",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "draft",
+   "fieldtype": "Read Only",
+   "label": "Draft"
+  },
+  {
+   "fieldname": "crane_id",
+   "fieldtype": "Link",
+   "label": "Crane ID",
+   "options": "Asset"
+  },
+  {
+   "fieldname": "crane",
+   "fieldtype": "Read Only",
+   "label": "Crane"
+  },
+  {
+   "fieldname": "operator",
+   "fieldtype": "Link",
+   "label": "Operator",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "assistant",
+   "fieldtype": "Link",
+   "label": "Assistant",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "lift_location",
+   "fieldtype": "Select",
+   "label": "Lift Location"
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Select",
+   "label": "Destination"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "internal_notes",
+   "fieldtype": "Small Text",
+   "label": "Internal Notes"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "links": [],
+ "modified": "2026-07-10 00:08:29.215753",
+ "modified_by": "Administrator",
+ "module": "Boathouse",
+ "name": "Crane Booking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "boat_name",
+ "track_changes": 1
+}

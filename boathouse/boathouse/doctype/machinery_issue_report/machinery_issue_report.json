@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "MIR-.YYYY.-.#####",
+ "creation": "2026-07-10 00:16:12.501279",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ahru",
+  "amended_from",
+  "machinery",
+  "machinery_name",
+  "issue",
+  "description",
+  "reporter_name",
+  "reporter_email",
+  "phone",
+  "priority"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ahru",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Machinery Issue Report",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "machinery",
+   "fieldtype": "Link",
+   "label": "Machinery",
+   "options": "Machinery"
+  },
+  {
+   "fieldname": "machinery_name",
+   "fieldtype": "Read Only",
+   "label": "Machinery Name"
+  },
+  {
+   "fieldname": "issue",
+   "fieldtype": "Data",
+   "label": "Issue"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "reporter_name",
+   "fieldtype": "Data",
+   "label": "Reporter Name"
+  },
+  {
+   "fieldname": "reporter_email",
+   "fieldtype": "Data",
+   "label": "Reporter Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "Low\nMedium\nHigh\nCritical"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-10 00:19:05.304993",
+ "modified_by": "Administrator",
+ "module": "Boathouse",
+ "name": "Machinery Issue Report",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "machinery_name",
+ "track_changes": 1
+}
