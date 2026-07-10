@@ -1,7 +1,12 @@
 {
  "app": "boathouse",
- "charts": [],
- "content": "[]",
+ "charts": [
+  {
+   "chart_name": "Club Boat Available",
+   "label": "Club Boat Available"
+  }
+ ],
+ "content": "[{\"id\":\"judwKx0QKZ\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Welcome to the Boathouse Operations workspace</span>\",\"col\":12}},{\"id\":\"Vr0ei8S1Hs\",\"type\":\"paragraph\",\"data\":{\"text\":\"Click on \\n\\t\\t\\t\\n\\t\\t\\t\\n\\t\\t to edit\",\"col\":12}},{\"id\":\"UPgy0nR7Id\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Club Boat Available\",\"col\":8}},{\"id\":\"AkKlpclaw_\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Lifts Today\",\"col\":4}},{\"id\":\"ty7tGJZmSv\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Boat Issue Reports\",\"col\":4}},{\"id\":\"qkVLs0jrrv\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Repairs\",\"col\":4}},{\"id\":\"7K7hnIAaQ6\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Machinery Issue Reports\",\"col\":4}},{\"id\":\"nsXipfhKum\",\"type\":\"card\",\"data\":{\"card_name\":\"Booking\",\"col\":6}},{\"id\":\"j97WkCdFQY\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":6}},{\"id\":\"uCKzXZjBcQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Calendar List\",\"col\":6}}]",
  "creation": "2026-07-10 00:42:30.426550",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,22 +18,131 @@
  "is_hidden": 0,
  "label": "Boathouse Operations",
  "link_type": "DocType",
- "links": [],
- "modified": "2026-07-10 00:43:32.010276",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Booking",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Crane Booking",
+   "link_count": 0,
+   "link_to": "Crane Booking",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Private Boat",
+   "link_count": 0,
+   "link_to": "Private Boat",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Boat Reports",
+   "link_count": 0,
+   "link_to": "Boat Issue Report",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Machinery Reports",
+   "link_count": 0,
+   "link_to": "Machinery Issue Report",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Repair Jobs",
+   "link_count": 0,
+   "link_to": "Repair Job",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-07-10 11:50:50.957454",
  "modified_by": "Administrator",
  "module": "Boathouse",
  "name": "Boathouse Operations",
  "number_cards": [],
  "owner": "Administrator",
  "public": 1,
- "quick_lists": [],
+ "quick_lists": [
+  {
+   "document_type": "Crane Booking",
+   "label": "Lifts Today",
+   "quick_list_filter": "[[\"Crane Booking\",\"start_time\",\"Timespan\",\"today\"]]"
+  },
+  {
+   "document_type": "Boat Issue Report",
+   "label": "Boat Issue Reports",
+   "quick_list_filter": "[[\"Boat Issue Report\",\"docstatus\",\"=\",\"0\"]]"
+  },
+  {
+   "document_type": "Repair Job",
+   "label": "Repairs",
+   "quick_list_filter": "[[\"Repair Job\",\"repair_status\",\"!=\",\"Completed\"],[\"Repair Job\",\"repair_status\",\"!=\",\"Cancelled\"]]"
+  },
+  {
+   "document_type": "Machinery Issue Report",
+   "label": "Machinery Issue Reports",
+   "quick_list_filter": "[[\"Machinery Issue Report\",\"docstatus\",\"=\",\"0\"]]"
+  }
+ ],
  "roles": [
   {
    "role": "Senior Boatman"
   }
  ],
  "sequence_id": 0.0,
- "shortcuts": [],
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Calendar List",
+   "link_to": "Calendar View",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
  "title": "Boathouse Operations",
  "type": "Workspace"
 }

@@ -1,0 +1,30 @@
+{
+ "cards": [
+  {
+   "card": "Club Boats Available"
+  },
+  {
+   "card": "Club Boat Total"
+  },
+  {
+   "card": "Repair Job"
+  }
+ ],
+ "charts": [
+  {
+   "width": "Half"
+  }
+ ],
+ "creation": "2026-07-10 11:11:15.795472",
+ "dashboard_name": "Workshop",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2026-07-10 11:37:55.474552",
+ "modified_by": "Administrator",
+ "module": "Boathouse",
+ "name": "Workshop",
+ "owner": "Administrator"
+}

@@ -51,7 +51,7 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "Description"
   },
   {
@@ -80,7 +80,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-07-10 00:19:05.304993",
+ "modified": "2026-07-10 11:07:42.526252",
  "modified_by": "Administrator",
  "module": "Boathouse",
  "name": "Machinery Issue Report",
