@@ -22,7 +22,7 @@
   "design",
   "length",
   "beam",
-  "weight",
+  "displacement",
   "draft",
   "crane_id",
   "crane",
@@ -96,31 +96,31 @@
    "options": "Private Boat"
   },
   {
+   "fetch_from": "boat.boat_name",
    "fieldname": "boat_name",
    "fieldtype": "Read Only",
    "label": "Boat Name"
   },
   {
+   "fetch_from": "boat.design",
    "fieldname": "design",
    "fieldtype": "Read Only",
    "label": "Design"
   },
   {
+   "fetch_from": "boat.length",
    "fieldname": "length",
    "fieldtype": "Read Only",
    "label": "Length"
   },
   {
+   "fetch_from": "boat.beam",
    "fieldname": "beam",
    "fieldtype": "Read Only",
    "label": "Beam"
   },
   {
-   "fieldname": "weight",
-   "fieldtype": "Read Only",
-   "label": "Weight"
-  },
-  {
+   "fetch_from": "boat.draft",
    "fieldname": "draft",
    "fieldtype": "Read Only",
    "label": "Draft"
@@ -129,9 +129,10 @@
    "fieldname": "crane_id",
    "fieldtype": "Link",
    "label": "Crane ID",
-   "options": "Asset"
+   "options": "Machinery"
   },
   {
+   "fetch_from": "crane_id.machinery_name",
    "fieldname": "crane",
    "fieldtype": "Read Only",
    "label": "Crane"
@@ -172,13 +173,19 @@
    "fieldname": "internal_notes",
    "fieldtype": "Small Text",
    "label": "Internal Notes"
+  },
+  {
+   "fetch_from": "boat.displacement",
+   "fieldname": "displacement",
+   "fieldtype": "Read Only",
+   "label": "Displacement"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_calendar_and_gantt": 1,
  "links": [],
- "modified": "2026-07-11 10:34:06.875292",
+ "modified": "2026-07-11 13:47:19.252564",
  "modified_by": "Administrator",
  "module": "Boathouse",
  "name": "Crane Booking",

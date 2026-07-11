@@ -15,7 +15,7 @@
   "length",
   "beam",
   "draft",
-  "weight",
+  "displacement",
   "membership"
  ],
  "fields": [
@@ -64,22 +64,22 @@
    "label": "Draft"
   },
   {
-   "fieldname": "weight",
-   "fieldtype": "Data",
-   "label": "Weight"
-  },
-  {
    "fieldname": "membership",
    "fieldtype": "Select",
    "label": "Membership",
    "options": "Member\nNon-Member"
+  },
+  {
+   "fieldname": "displacement",
+   "fieldtype": "Data",
+   "label": "Displacement"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-07-11 10:34:18.711662",
+ "modified": "2026-07-11 13:45:28.368767",
  "modified_by": "Administrator",
  "module": "Boathouse",
  "name": "Private Boat",
