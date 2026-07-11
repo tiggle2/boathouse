@@ -10,6 +10,7 @@
   "section_break_st8j",
   "amended_from",
   "boat_name",
+  "boat_type",
   "image",
   "design",
   "length",
@@ -73,12 +74,18 @@
    "fieldtype": "Select",
    "label": "Availability Status",
    "options": "Available\nUnavailable"
+  },
+  {
+   "fieldname": "boat_type",
+   "fieldtype": "Select",
+   "label": "Boat Type",
+   "options": "Keelboat\nDinghy\nRIB\nLaunch\nOther"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-11 16:10:20.470086",
+ "modified": "2026-07-11 16:35:30.989180",
  "modified_by": "Administrator",
  "module": "Boathouse",
  "name": "Club Boat",
