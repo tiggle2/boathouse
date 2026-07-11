@@ -9,9 +9,8 @@
  "field_order": [
   "section_break_ot7w",
   "machinery_name",
-  "type",
+  "machinery_type",
   "capacity",
-  "status",
   "availability_status"
  ],
  "fields": [
@@ -25,33 +24,27 @@
    "label": "Machinery Name"
   },
   {
-   "fieldname": "type",
-   "fieldtype": "Select",
-   "label": "Type",
-   "options": "Crane\nForklift\nMisc"
-  },
-  {
    "fieldname": "capacity",
    "fieldtype": "Data",
    "label": "Capacity"
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Available\nRepair in progress\nOut of order"
   },
   {
    "fieldname": "availability_status",
    "fieldtype": "Select",
    "label": "Availability Status",
    "options": "Available\nUnavailable"
+  },
+  {
+   "fieldname": "machinery_type",
+   "fieldtype": "Select",
+   "label": "Machinery Type",
+   "options": "Crane\nForklift\nMisc"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-11 10:34:54.447396",
+ "modified": "2026-07-11 16:10:30.613638",
  "modified_by": "Administrator",
  "module": "Boathouse",
  "name": "Machinery",

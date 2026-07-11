@@ -98,7 +98,7 @@
    "type": "Link"
   }
  ],
- "modified": "2026-07-11 11:08:34.024113",
+ "modified": "2026-07-11 15:34:32.028509",
  "modified_by": "Administrator",
  "module": "Boathouse",
  "name": "Boathouse Operations",
@@ -107,14 +107,14 @@
  "public": 1,
  "quick_lists": [
   {
+   "document_type": "Boat Issue Report",
+   "label": "Boat Issue Reports",
+   "quick_list_filter": "[[\"Boat Issue Report\",\"status\",\"!=\",\"Read\"]]"
+  },
+  {
    "document_type": "Crane Booking",
    "label": "Lifts Today",
    "quick_list_filter": "[[\"Crane Booking\",\"start_time\",\"Timespan\",\"today\"]]"
-  },
-  {
-   "document_type": "Boat Issue Report",
-   "label": "Boat Issue Reports",
-   "quick_list_filter": "[[\"Boat Issue Report\",\"docstatus\",\"=\",\"0\"]]"
   },
   {
    "document_type": "Repair Job",

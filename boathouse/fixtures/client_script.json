@@ -14,11 +14,22 @@
   "docstatus": 0,
   "doctype": "Client Script",
   "dt": "Crane Booking",
-  "enabled": 1,
-  "modified": "2026-07-10 00:40:12.116065",
+  "enabled": 0,
+  "modified": "2026-07-11 16:00:07.282164",
   "module": "Boathouse",
   "name": "Crane Booking Filtering",
   "script": "frappe.ui.form.on('Crane Booking', {\n    refresh: function(frm) {\n        // Restricts the crane_id dropdown list to 'Machinery' assets only\n        frm.set_query('crane_id', function() {\n            return {\n                filters: {\n                    'asset_category': 'Machinery'\n                }\n            };\n        });\n    }\n});\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Crane Booking",
+  "enabled": 1,
+  "modified": "2026-07-11 15:38:46.248246",
+  "module": "Boathouse",
+  "name": "Crane Booking Duration",
+  "script": "frappe.ui.form.on('Crane Booking', {\r\n    start_time: calculate_duration,\r\n    end_time: calculate_duration\r\n});\r\n\r\nfunction calculate_duration(frm) {\r\n    if (frm.doc.start_time && frm.doc.end_time) {\r\n        let start = frappe.datetime.str_to_obj(frm.doc.start_time);\r\n        let end = frappe.datetime.str_to_obj(frm.doc.end_time);\r\n\r\n        let seconds = (end - start) / 1000;\r\n        frm.set_value('duration', seconds);\r\n    }\r\n}",
   "view": "Form"
  }
 ]

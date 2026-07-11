@@ -16,7 +16,6 @@
   "beam",
   "weight",
   "date_acquired",
-  "status",
   "availability_status"
  ],
  "fields": [
@@ -70,12 +69,6 @@
    "label": "Date Acquired"
   },
   {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Available\nRepair in progress\nOut of order"
-  },
-  {
    "fieldname": "availability_status",
    "fieldtype": "Select",
    "label": "Availability Status",
@@ -85,7 +78,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-10 11:19:14.670282",
+ "modified": "2026-07-11 16:10:20.470086",
  "modified_by": "Administrator",
  "module": "Boathouse",
  "name": "Club Boat",
