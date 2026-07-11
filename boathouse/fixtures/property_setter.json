@@ -2910,5 +2910,53 @@
   "property_type": "Check",
   "row_name": null,
   "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Club Boat",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "boat_name",
+  "is_system_generated": 1,
+  "modified": "2026-07-10 21:14:52.712335",
+  "module": null,
+  "name": "Club Boat-boat_name-in_list_view",
+  "property": "in_list_view",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Club Boat",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "availability_status",
+  "is_system_generated": 1,
+  "modified": "2026-07-10 21:14:52.713744",
+  "module": null,
+  "name": "Club Boat-availability_status-in_list_view",
+  "property": "in_list_view",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Club Boat",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "design",
+  "is_system_generated": 1,
+  "modified": "2026-07-10 21:14:52.714396",
+  "module": null,
+  "name": "Club Boat-design-in_list_view",
+  "property": "in_list_view",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
  }
 ]

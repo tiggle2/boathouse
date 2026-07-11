@@ -66,6 +66,7 @@
    "options": "Club Boat"
   },
   {
+   "fetch_from": "boat.boat_name",
    "fieldname": "boat_name",
    "fieldtype": "Read Only",
    "label": "Boat Name"
@@ -77,6 +78,7 @@
    "options": "Machinery"
   },
   {
+   "fetch_from": "machinery.machinery_name",
    "fieldname": "machinery_name",
    "fieldtype": "Read Only",
    "label": "Machinery Name"
@@ -101,7 +103,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-07-09 23:57:13.567559",
+ "modified": "2026-07-10 21:12:30.408034",
  "modified_by": "Administrator",
  "module": "Boathouse",
  "name": "Repair Job",

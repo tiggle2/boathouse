@@ -11,7 +11,10 @@
   "boat",
   "boat_name",
   "customer",
-  "session"
+  "session",
+  "start_time",
+  "end_time",
+  "duration"
  ],
  "fields": [
   {
@@ -40,12 +43,27 @@
    "fieldname": "session",
    "fieldtype": "Data",
    "label": "Session"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "Duration"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-09 23:51:06.449973",
+ "modified": "2026-07-10 20:49:35.079332",
  "modified_by": "Administrator",
  "module": "Boathouse",
  "name": "Rental Booking",
