@@ -13,10 +13,13 @@
   "machinery_name",
   "issue",
   "description",
+  "photo",
+  "date_reported",
   "reporter_name",
   "reporter_email",
   "phone",
-  "priority"
+  "priority",
+  "status"
  ],
  "fields": [
   {
@@ -26,6 +29,7 @@
   {
    "fieldname": "amended_from",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Amended From",
    "no_copy": 1,
    "options": "Machinery Issue Report",
@@ -74,13 +78,29 @@
    "fieldtype": "Select",
    "label": "Priority",
    "options": "Low\nMedium\nHigh\nCritical"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "date_reported",
+   "fieldtype": "Datetime",
+   "label": "Date Reported"
+  },
+  {
+   "default": "New",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "New\nRead"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2026-07-10 11:07:42.526252",
+ "modified": "2026-07-11 10:33:41.863530",
  "modified_by": "Administrator",
  "module": "Boathouse",
  "name": "Machinery Issue Report",
@@ -97,7 +117,17 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
-   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Senior Boatman",
+   "share": 1,
    "write": 1
   }
  ],
