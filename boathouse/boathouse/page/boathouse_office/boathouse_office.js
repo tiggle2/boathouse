@@ -10,28 +10,37 @@ frappe.pages["boathouse-office"].on_page_load = function(wrapper) {
 
         <div style="padding:20px">
 
-            <h2>Boathouse Office Loaded</h2>
+            <div style="margin-bottom:15px;">
+                <button class="btn btn-primary" id="test-crane">
+                    New Crane Booking
+                </button>
 
-            <button class="btn btn-primary" id="test-crane">
-                New Crane Booking
-            </button>
+                <button class="btn btn-success" id="test-rental">
+                    New Rental Booking
+                </button>
+            </div>
 
-            <button class="btn btn-success" id="test-rental">
-                New Rental Booking
-            </button>
+            <div id="office-calendar"></div>
 
         </div>
 
     `);
 
-
     $("#test-crane").click(() => {
         frappe.new_doc("Crane Booking");
     });
 
-
     $("#test-rental").click(() => {
         frappe.new_doc("Rental Booking");
     });
+
+    const calendarEl = document.getElementById("office-calendar");
+
+    if (window.BoathouseCalendar) {
+        window.BoathouseCalendar.init(calendarEl);
+    } else {
+        console.error("BoathouseCalendar bundle was not loaded.");
+        frappe.msgprint("Boathouse calendar bundle was not loaded.");
+    }
 
 };
