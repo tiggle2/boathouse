@@ -6,13 +6,32 @@ frappe.pages["boathouse-office"].on_page_load = function(wrapper) {
         single_column: true
     });
 
-    frappe.require([
-        "/assets/boathouse/js/boathouse_office/office.js",
-        "/assets/boathouse/css/boathouse_office/office.css"
-    ], () => {
+    $(wrapper).find(".layout-main-section").html(`
 
-        boathouse_office.init(page);
+        <div style="padding:20px">
 
+            <h2>Boathouse Office Loaded</h2>
+
+            <button class="btn btn-primary" id="test-crane">
+                New Crane Booking
+            </button>
+
+            <button class="btn btn-success" id="test-rental">
+                New Rental Booking
+            </button>
+
+        </div>
+
+    `);
+
+
+    $("#test-crane").click(() => {
+        frappe.new_doc("Crane Booking");
+    });
+
+
+    $("#test-rental").click(() => {
+        frappe.new_doc("Rental Booking");
     });
 
 };
