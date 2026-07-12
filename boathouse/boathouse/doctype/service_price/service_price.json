@@ -11,7 +11,8 @@
   "service",
   "service_category",
   "price",
-  "price_category"
+  "price_category",
+  "discount"
  ],
  "fields": [
   {
@@ -39,12 +40,17 @@
    "fieldtype": "Select",
    "label": "Price Category",
    "options": "Fixed\nPer Meter\nPer Hour"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Data",
+   "label": "Discount"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-12 20:22:46.195419",
+ "modified": "2026-07-12 20:26:41.094658",
  "modified_by": "Administrator",
  "module": "Boathouse",
  "name": "Service Price",
