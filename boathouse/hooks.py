@@ -4,6 +4,9 @@ app_publisher = "tsob"
 app_description = "Manages Bookings and Maintenance"
 app_email = "tobraonain29@gmail.com"
 app_license = "mit"
+app_include_js = [
+    "/assets/boathouse/js/boathouse_office.bundle.js"
+]
 fixtures = [
     "Custom Field",
     "Property Setter",
