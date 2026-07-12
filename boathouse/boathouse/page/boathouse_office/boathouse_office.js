@@ -34,13 +34,12 @@ frappe.pages["boathouse-office"].on_page_load = function(wrapper) {
         frappe.new_doc("Rental Booking");
     });
 
-    const calendarEl = document.getElementById("office-calendar");
+	const calendarEl = document.getElementById("office-calendar");
 
-    if (window.BoathouseCalendar) {
-        window.BoathouseCalendar.init(calendarEl);
-    } else {
-        console.error("BoathouseCalendar bundle was not loaded.");
-        frappe.msgprint("Boathouse calendar bundle was not loaded.");
-    }
+	if (window.BoathouseCalendar) {
+    window.BoathouseCalendar.init(calendarEl);
+	} else {
+   	 console.error("BoathouseCalendar missing");
+	}
 
 };
