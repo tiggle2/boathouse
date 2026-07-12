@@ -1,1 +1,45 @@
+.boathouse-office {
 
+    padding: 15px;
+
+}
+
+
+.office-toolbar {
+
+    margin-bottom: 15px;
+
+}
+
+
+.office-layout {
+
+    display: grid;
+
+    grid-template-columns: 3fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+#office-calendar {
+
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+}
+
+
+.office-sidebar {
+
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+}
