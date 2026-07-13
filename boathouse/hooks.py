@@ -5,7 +5,7 @@ app_description = "Manages Bookings and Maintenance"
 app_email = "tobraonain29@gmail.com"
 app_license = "mit"
 app_include_js = [
-    "/assets/boathouse/dist/js/boathouse.bundle.VABGZWTP.js"
+    "boathouse/dist/js/boathouse.bundle.js"
 ]
 
 app_include_css = [
