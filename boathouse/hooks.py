@@ -5,7 +5,8 @@ app_description = "Manages Bookings and Maintenance"
 app_email = "tobraonain29@gmail.com"
 app_license = "mit"
 page_js = {
-    "boathouse_office": "public/js/boathouse_office/office.js"
+    "boathouse-office": "boathouse/page/boathouse_office/boathouse_office.js"
+}
 }
 fixtures = [
     "Custom Field",
