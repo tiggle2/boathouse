@@ -6,6 +6,10 @@ frappe.pages["boathouse-office"].on_page_load = function(wrapper) {
         single_column: true
     });
 
-    new BoathouseOffice(page);
+    if (window.BoathouseOffice) {
+        new BoathouseOffice(page);
+    } else {
+        console.error("BoathouseOffice not loaded");
+    }
 
 };
