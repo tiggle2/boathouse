@@ -1,59 +1,37 @@
-import { init_calendar } from "./calendar";
+console.log("Boathouse office module loaded");
+
 
 window.BoathouseOffice = class {
 
     constructor(page) {
 
-        this.page = page;
+        console.log("Boathouse Office started");
 
-        this.render();
-
-        this.bind_events();
-
-        init_calendar(
-            document.getElementById("booking-calendar")
-        );
-
-    }
-
-
-    render() {
-
-        $(this.page.body).html(`
+        $(page.body).html(`
 
             <div class="boathouse-office">
 
-                <div class="mb-4">
+                <h2>Boathouse Office</h2>
 
-                    <button class="btn btn-primary" id="new-crane-booking">
-                        New Crane Booking
-                    </button>
+                <button class="btn btn-primary" id="new-crane">
+                    New Crane Booking
+                </button>
 
-                    <button class="btn btn-success" id="new-rental-booking">
-                        New Rental Booking
-                    </button>
-
-                </div>
-
-
-                <div id="booking-calendar"></div>
-
+                <button class="btn btn-success" id="new-rental">
+                    New Rental Booking
+                </button>
 
             </div>
 
         `);
 
-    }
 
-
-    bind_events() {
-
-        $("#new-crane-booking").click(() => {
+        $("#new-crane").click(() => {
             frappe.new_doc("Crane Booking");
         });
 
 
-        $("#new-rental-booking").click(() => {
+        $("#new-rental").click(() => {
             frappe.new_doc("Rental Booking");
         });
 
