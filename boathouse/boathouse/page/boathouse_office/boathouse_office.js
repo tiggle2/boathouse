@@ -1,3 +1,5 @@
+console.log("=== BOATHOUSE PAGE JS IS RUNNING ===");
+alert("Boathouse page JS loaded");
 frappe.pages["boathouse-office"].on_page_load = function(wrapper) {
 
     let page = frappe.ui.make_app_page({
