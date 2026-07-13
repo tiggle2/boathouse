@@ -26,11 +26,6 @@
   dependencies:
     "@fullcalendar/daygrid" "~6.1.21"
 
-preact@^10.29.7:
-  version "10.29.7"
-  resolved "https://registry.yarnpkg.com/preact/-/preact-10.29.7.tgz#b70df2eb06e982c7ac65b6df1541e5846ac0f6ba"
-  integrity sha512-DCHYrK/B10yUD3ZjLfhZ3WIE/9Vf9VFUODcRE2dRomTYDpJk6z6L9wecSfhfE6M9ZTHUdyQkoC46arIDhEV84Q==
-
 preact@~10.12.1:
   version "10.12.1"
   resolved "https://registry.yarnpkg.com/preact/-/preact-10.12.1.tgz#8f9cb5442f560e532729b7d23d42fd1161354a21"
