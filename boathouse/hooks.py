@@ -7,6 +7,9 @@ app_license = "mit"
 app_include_js = [
     "/assets/boathouse/js/boathouse.bundle.js"
 ]
+app_include_css = [
+    "/assets/boathouse/css/office.css"
+]
 fixtures = [
     "Custom Field",
     "Property Setter",
