@@ -1,4 +1,4 @@
-frappe.pages["boathouse-office"].on_page_load = function(wrapper) {
+frappe.pages["boathouse-office"].on_page_load = function (wrapper) {
 
     const page = frappe.ui.make_app_page({
         parent: wrapper,
@@ -6,7 +6,13 @@ frappe.pages["boathouse-office"].on_page_load = function(wrapper) {
         single_column: true
     });
 
-
-    new BoathouseOffice(page);
-
+    page.body.innerHTML = `
+        <div style="
+            padding:40px;
+            text-align:center;
+            font-size:26px;
+        ">
+            ✅ Boathouse Office
+        </div>
+    `;
 };
