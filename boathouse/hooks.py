@@ -5,10 +5,11 @@ app_description = "Manages Bookings and Maintenance"
 app_email = "tobraonain29@gmail.com"
 app_license = "mit"
 app_include_js = [
-    "/assets/boathouse/js/boathouse.bundle.js"
+    "boathouse.bundle.js"
 ]
+
 app_include_css = [
-    "/assets/boathouse/css/boathouse_office/office.css"
+    "boathouse_office/office.css"
 ]
 fixtures = [
     "Custom Field",
