@@ -7,7 +7,6 @@ app_license = "mit"
 page_js = {
     "boathouse-office": "boathouse/page/boathouse_office/boathouse_office.js"
 }
-}
 fixtures = [
     "Custom Field",
     "Property Setter",
