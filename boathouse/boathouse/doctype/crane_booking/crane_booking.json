@@ -156,8 +156,9 @@
   },
   {
    "fieldname": "price",
-   "fieldtype": "Currency",
-   "label": "Price"
+   "fieldtype": "Link",
+   "label": "Price",
+   "options": "Service Price"
   },
   {
    "fieldname": "notes",
@@ -186,7 +187,7 @@
  "index_web_pages_for_search": 1,
  "is_calendar_and_gantt": 1,
  "links": [],
- "modified": "2026-07-11 16:04:00.739407",
+ "modified": "2026-07-15 17:04:15.325548",
  "modified_by": "Administrator",
  "module": "Boathouse",
  "name": "Crane Booking",

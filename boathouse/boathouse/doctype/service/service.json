@@ -2,60 +2,60 @@
  "actions": [],
  "allow_bulk_edit": 1,
  "allow_rename": 1,
- "autoname": "SP-.YYYY.-.#####",
- "creation": "2026-07-12 20:16:42.882579",
+ "autoname": "SRV-.YYYY.-.#####",
+ "creation": "2026-07-15 17:50:28.311463",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_xnts",
+  "section_break_lcc9",
   "service",
   "service_category",
   "pricing_method",
-  "rate",
-  "discount"
+  "member_rate",
+  "nonmember_rate"
  ],
  "fields": [
   {
-   "fieldname": "section_break_xnts",
+   "fieldname": "section_break_lcc9",
    "fieldtype": "Section Break"
   },
   {
    "fieldname": "service",
-   "fieldtype": "Link",
-   "label": "Service",
-   "options": "Service"
-  },
-  {
-   "fetch_from": "service.service_category",
-   "fieldname": "service_category",
-   "fieldtype": "Read Only",
-   "label": "Service Category"
-  },
-  {
-   "fieldname": "discount",
    "fieldtype": "Data",
-   "label": "Discount"
+   "label": "Service"
   },
   {
-   "fetch_from": "service.pricing_method",
+   "fieldname": "service_category",
+   "fieldtype": "Select",
+   "label": "Service Category",
+   "options": "Crane\nPontoon\nLaunch\nOther"
+  },
+  {
    "fieldname": "pricing_method",
-   "fieldtype": "Read Only",
-   "label": "Pricing Method"
+   "fieldtype": "Select",
+   "label": "Pricing Method",
+   "options": "Fixed\nHourly\nDaily\nPer Meter"
   },
   {
-   "fetch_from": "service.rate",
-   "fieldname": "rate",
-   "fieldtype": "Read Only",
-   "label": "Rate"
+   "default": "EUR",
+   "fieldname": "member_rate",
+   "fieldtype": "Currency",
+   "label": "Member Rate"
+  },
+  {
+   "default": "EUR",
+   "fieldname": "nonmember_rate",
+   "fieldtype": "Currency",
+   "label": "Non-Member Rate"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-15 17:56:22.766678",
+ "modified": "2026-07-15 18:13:53.161777",
  "modified_by": "Administrator",
  "module": "Boathouse",
- "name": "Service Price",
+ "name": "Service",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
@@ -70,15 +70,6 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
-  },
-  {
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Senior Boatman",
-   "share": 1
   }
  ],
  "row_format": "Dynamic",
